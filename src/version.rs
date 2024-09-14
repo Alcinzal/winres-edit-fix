@@ -315,7 +315,7 @@ impl TrySerialize for VersionInfoChild {
                     let var_record = try_build_struct(
                         k,
                         DataType::Binary,
-                        data.len() / 2,
+                        data.len(),
                         &u32slice_to_u8vec(data),
                     )?;
                     var_records.try_align_u32()?;
